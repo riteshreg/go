@@ -3,7 +3,9 @@ package main
 import (
 	"fmt"
 	"golang/functions"
+	"golang/gotype"
 	"golang/greetings"
+	"golang/variable"
 )
 
 func main() {
@@ -19,8 +21,16 @@ func main() {
 	fmt.Printf("a=%s and b=%s \n", a, b)
 
 	first, secod := functions.Split(10)
-	fmt.Printf("first=%d and second=%d", first, secod)
+	fmt.Printf("first=%d and second=%d \n", first, secod)
 
 	// function package >>
+
+	// variable package <<
+	variable.Var()
+	variable.WithInit()
+	variable.ShortVariableDec()
+	// variable package >>
+
+	gotype.Zero()
 
 }
