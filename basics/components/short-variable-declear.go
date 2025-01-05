@@ -3,7 +3,7 @@
 
 // Outside a function, every statement begins with a keyword (var, func, and so on) and so the := construct is not available.
 
-package variable
+package components
 
 import "fmt"
 

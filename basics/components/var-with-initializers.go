@@ -1,4 +1,4 @@
-package variable
+package components
 
 import (
 	"fmt"

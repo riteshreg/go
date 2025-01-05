@@ -8,7 +8,7 @@
 
 // x, y int
 
-package functions
+package components
 
 import (
 	"fmt"

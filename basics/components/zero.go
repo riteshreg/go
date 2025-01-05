@@ -1,4 +1,4 @@
-package gotype
+package components
 
 import "fmt"
 

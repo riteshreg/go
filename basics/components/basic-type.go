@@ -16,7 +16,7 @@
 
 // 1 byte => 8bit => 0 to 2^8 - 1 => 0 - 255
 
-package gotype
+package components
 
 import "fmt"
 
