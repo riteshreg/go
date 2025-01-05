@@ -1,9 +1,11 @@
 package main
 
 import (
-	components "golang/basics/basic_components" // I have declear packages as components at basic_components
+	flowcontrol "golang/basics/flowControl" //I have declear  to import alices is because the fileName didn't match the packageName if we want to remove it just rename golang/basics/flowcontrol as this matches the packagesName
 )
 
 func main() {
-	components.Hello("Ritesh Khadka")
+	// components.Hello("Ritesh Khadka")
+	flowcontrol.ContinuedLoop()
+
 }
