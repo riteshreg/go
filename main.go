@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golang/basics/components"
+	components "golang/basics/basic_components" // I have declear packages as components at basic_components
 )
 
 func main() {
