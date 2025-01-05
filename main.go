@@ -32,5 +32,7 @@ func main() {
 	// variable package >>
 
 	gotype.Zero()
-
+	gotype.Conversion()
+	gotype.Inference()
+	gotype.Numeric()
 }
