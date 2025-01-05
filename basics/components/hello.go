@@ -1,4 +1,4 @@
-package greetings // ✅ Declare the package name
+package components
 
 import (
 	"fmt"

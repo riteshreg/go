@@ -3,7 +3,7 @@
 
 // The swap function returns two strings.
 
-package functions
+package components
 
 func Swap(a, b string) (string, string) {
 	return b, a
