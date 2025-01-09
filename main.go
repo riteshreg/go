@@ -6,6 +6,6 @@ import (
 
 func main() {
 	// components.Hello("Ritesh Khadka")
-	flowcontrol.Os()
+	flowcontrol.DefMulti()
 
 }
