@@ -6,6 +6,6 @@ import (
 
 func main() {
 	// components.Hello("Ritesh Khadka")
-	moreType.SliceBound()
+	moreType.RangeContinue()
 
 }
