@@ -1,9 +1,9 @@
 package main
 
 import (
-	_if_statement "v0/if_statement"
+	switch_statement "v0/switch"
 )
 
 func main() {
-	_if_statement.IfStatement()
+	switch_statement.Switch()
 }
