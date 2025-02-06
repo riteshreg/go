@@ -1,9 +1,9 @@
 package main
 
 import (
-	"v0/constant"
+	_if_statement "v0/if_statement"
 )
 
 func main() {
-	constant.Const()
+	_if_statement.IfStatement()
 }
