@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	x.Variadic()
+	x.Multireturnvalue()
 }

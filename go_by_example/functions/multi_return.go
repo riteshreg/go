@@ -1,4 +1,4 @@
-package multireturnvalue
+package functions
 
 import "fmt"
 
