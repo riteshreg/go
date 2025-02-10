@@ -1,9 +1,9 @@
 package main
 
 import (
-	slice "v0/slice"
+	maps "v0/maps"
 )
 
 func main() {
-	slice.Slice()
+	maps.Maps()
 }
