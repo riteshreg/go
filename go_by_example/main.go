@@ -1,9 +1,9 @@
 package main
 
 import (
-	maps "v0/maps"
+	functions "v0/functions"
 )
 
 func main() {
-	maps.Maps()
+	functions.Functions()
 }
