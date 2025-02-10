@@ -1,9 +1,9 @@
 package main
 
 import (
-	switch_statement "v0/switch"
+	slice "v0/slice"
 )
 
 func main() {
-	switch_statement.Switch()
+	slice.Slice()
 }
