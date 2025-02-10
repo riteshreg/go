@@ -1,9 +1,9 @@
 package main
 
 import (
-	functions "v0/functions"
+	x "v0/multi_return_value"
 )
 
 func main() {
-	functions.Functions()
+	x.Multireturnvalue()
 }
