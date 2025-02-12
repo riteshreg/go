@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/range"
+	x "v0/pointers"
 )
 
 func main() {
-	x.Range()
+	x.Pointers()
 }
