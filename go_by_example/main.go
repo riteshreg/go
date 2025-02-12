@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/recursive"
+	x "v0/range"
 )
 
 func main() {
-	x.Recursive()
+	x.Range()
 }
