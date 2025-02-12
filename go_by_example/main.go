@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/closures"
+	x "v0/recursive"
 )
 
 func main() {
-	x.Closures()
+	x.Recursive()
 }
