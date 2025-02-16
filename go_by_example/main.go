@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/pointers"
+	x "v0/string-and-runes"
 )
 
 func main() {
-	x.Pointers()
+	x.StringAndRunes()
 }
