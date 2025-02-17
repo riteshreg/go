@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/string-and-runes"
+	x "v0/struct"
 )
 
 func main() {
-	x.StringAndRunes()
+	x.Struct()
 }
