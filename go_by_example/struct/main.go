@@ -2,14 +2,14 @@ package mystruct
 
 import "fmt"
 
-type person struct {
+type Person struct {
 	name string
 	age  int
 }
 
-func newPerson(name string) *person {
+func newPerson(name string) *Person {
 
-	p := person{name: name, age: 24}
+	p := Person{name: name, age: 24}
 	return &p
 
 }
@@ -18,9 +18,9 @@ func Struct() {
 	myPerson := newPerson("Harry")
 	fmt.Println(*myPerson)
 
-	fmt.Println(person{name: "Ritesh", age: 21})
+	fmt.Println(Person{name: "Ritesh", age: 21})
 
-	fmt.Println(&person{name: "Ann", age: 40})
+	fmt.Println(&Person{name: "Ann", age: 40})
 
 	dog := struct {
 		name string

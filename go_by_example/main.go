@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/struct"
+	x "v0/method"
 )
 
 func main() {
-	x.Struct()
+	x.Methods()
 }
