@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/method"
+	x "v0/interface"
 )
 
 func main() {
-	x.Methods()
+	x.EX2()
 }
