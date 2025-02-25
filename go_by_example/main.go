@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/interface"
+	x "v0/struct-embedding"
 )
 
 func main() {
-	x.EX2()
+	x.StructEmbedding()
 }
