@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/struct-embedding"
+	x "v0/generics"
 )
 
 func main() {
-	x.StructEmbedding()
+	x.Generic()
 }
