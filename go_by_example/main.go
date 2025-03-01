@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	x.Error()
+	x.CustomeError()
 }
