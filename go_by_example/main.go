@@ -1,9 +1,9 @@
 package main
 
 import (
-	x "v0/go_routines"
+	x "v0/channels"
 )
 
 func main() {
-	x.GoRoutine()
+	x.Channels()
 }
