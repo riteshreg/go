@@ -1,8 +1,23 @@
-package forloop
+package main
 
-import "fmt"
+func main() {
 
-func For() {
+	// for i := 0; i <= 20; i++ {
+	// 	fmt.Println(i)
+	// }
+
+	// for n := range 10 {
+	// 	if n == 5 {
+	// 		continue
+	// 	}
+	// 	fmt.Println(n)
+	// }
+
+	// for {
+	// 	fmt.Print("loop")
+	// 	break
+	// }
+
 	// for i := 0; i <= 10; i++ {
 	// 	fmt.Println("Hello, World!", i)
 	// }
@@ -14,7 +29,7 @@ func For() {
 	// 	i++
 	// }
 
-	for i := range 6 {
-		fmt.Println(i)
-	}
+	// for i := range 6 {
+	// 	fmt.Println(i)
+	// }
 }

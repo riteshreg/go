@@ -1,9 +1,10 @@
 package main
 
 import (
-	x "v0/channels"
+	hello "v0/hello"
 )
 
 func main() {
-	x.Channels()
+	// x.Channels()
+	hello.Hello()
 }

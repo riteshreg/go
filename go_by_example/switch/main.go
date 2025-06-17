@@ -1,14 +1,13 @@
-package switch_statement
+package main
 
 import (
 	"fmt"
 	"time"
 )
 
-func Switch() {
-	i := 3
+func main() {
+	i := 0
 
-	fmt.Printf("i is %d \n", i)
 	switch i {
 	case 1:
 		fmt.Println("I is 1")
@@ -16,6 +15,8 @@ func Switch() {
 		fmt.Println("I is 2")
 	case 3:
 		fmt.Println("I is 3")
+	default:
+		fmt.Printf("default: I is %d\n", i)
 	}
 
 	switch time.Now().Weekday() {
@@ -25,13 +26,13 @@ func Switch() {
 		fmt.Println("It's a weekday")
 	}
 
-	t := time.Now().Hour()
+	t := time.Now()
 
 	switch {
-	case t < 12:
-		fmt.Println("Its moring")
+	case t.Hour() < 12:
+		fmt.Println("It's before noon")
 	default:
-		fmt.Println("Its evening")
+		fmt.Println("It's after noon")
 	}
 
 }

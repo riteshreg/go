@@ -1,25 +1,18 @@
-package functions
+package main
 
 import "fmt"
 
-func sum(nums ...int) int {
-	fmt.Println("nums", nums)
+func Sum(nums ...int) int {
+	var total = 0
 
-	var sum int = 0
-
-	for _, value := range nums {
-		sum += value
+	for _, num := range nums {
+		total += num
 	}
 
-	return sum
+	return total
 }
 
-func Variadic() {
-	add := sum(4, 5)
-	fmt.Println(add)
-
-	nums := []int{1, 2, 3, 4}
-
-	sum(nums...)
-
+func main() {
+	var sum = Sum(10, 20, 30)
+	fmt.Println(sum)
 }
