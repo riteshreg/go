@@ -1,34 +1,19 @@
-package mystruct
+package main
 
 import "fmt"
 
-type Person struct {
+type person struct {
 	name string
 	age  int
 }
 
-func newPerson(name string) *Person {
-
-	p := Person{name: name, age: 24}
+func newPerson(name string) *person {
+	p := person{name: name, age: 21}
 	return &p
-
 }
 
-func Struct() {
-	myPerson := newPerson("Harry")
-	fmt.Println(*myPerson)
+func main() {
+	p := *newPerson("Ritesh Khadka")
+	fmt.Println(p.age)
 
-	fmt.Println(Person{name: "Ritesh", age: 21})
-
-	fmt.Println(&Person{name: "Ann", age: 40})
-
-	dog := struct {
-		name string
-		age  int
-	}{
-		name: "jonny",
-		age:  2,
-	}
-
-	fmt.Println(dog)
 }

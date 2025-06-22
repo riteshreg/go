@@ -1,20 +1,17 @@
-package stringandrunes
+package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
-func StringAndRunes() {
+func main() {
+	const s = "रितेश"
+	fmt.Println("Len:", len(s))
 
-	myString := "bpaynepal.com \n sdf"
+	for i := 0; i < len(s); i++ {
+		fmt.Printf("%x\n", s[i])
+	}
 
-	fmt.Println(myString)
-
-	// var newString string = `my name is ritesh// ssdfa`
-
-	myString = "dsfa"
-
-	fmt.Println(myString)
-
-	mystr := "Welcome to GeeksforGeeks"
-	fmt.Println("String:", mystr)
-
+	fmt.Println("rune count:", utf8.RuneCountInString(s))
 }

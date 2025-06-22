@@ -1,15 +1,15 @@
-package recursive
+package main
 
 import "fmt"
 
-func fact(n int) int {
+func recursive(n int) int {
 	if n == 0 {
-		return 1
+		return 0
 	}
 
-	return n * fact(n-1)
+	return recursive(n - 1)
 }
 
-func Recursive() {
-	fmt.Println(fact(4))
+func main() {
+	fmt.Println(recursive(7))
 }

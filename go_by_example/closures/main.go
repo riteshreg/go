@@ -1,14 +1,23 @@
-package closures
+package main
 
 import "fmt"
 
-func sum(val1 int) func(val2 int) int {
-	return func(val2 int) int {
-		return val1 + val2
+func intSeq() func() int {
+	i := 0
+	return func() int {
+		i++
+		return i
 	}
 }
 
-func Closures() {
-	f1 := sum(10)
-	fmt.Println(f1(11))
+func main() {
+
+	nextInt := intSeq()
+
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+
+	newInts := intSeq()
+	fmt.Println(newInts())
 }

@@ -1,71 +1,49 @@
-package my_interface
+package main
 
 import (
 	"fmt"
+	"math"
 )
 
-// // Define the interface
-// type Shape interface {
-// 	Area() float64
-// 	Perimeter() float64
-// }
-
-// // Circle type that implements the Shape interface
-// type Circle struct {
-// 	radius float64
-// }
-
-// // Rectangle type that implements the Shape interface
-// type Rectangle struct {
-// 	length, width float64
-// }
-
-// func (c Circle) Area() float64 {
-// 	return math.Pi * c.radius * c.radius
-// }
-
-// func (c Circle) Perimeter() float64 {
-// 	return 2 * math.Pi * c.radius
-// }
-
-// func (r Rectangle) Area() float64 {
-// 	return r.length * r.width
-// }
-
-// func (r Rectangle) Perimeter() float64 {
-// 	return 2 * (r.length + r.width)
-// }
-
-type Speaker interface {
-	Speak()
+type rect struct {
+	height, width float64
 }
 
-type Dog struct {
-	name string
-	age  int
+func (r rect) area() float64 {
+	return r.height * r.width
 }
 
-func (d Dog) Speak() {
-	fmt.Println("bhau bhau")
+func (r rect) perim() float64 {
+	return 2 * (r.height + r.width)
 }
 
-type Cat struct {
-	name string
-	age  int
+type circle struct {
+	radius float64
 }
 
-func (c Cat) Speak() {
-	fmt.Println("meow meow")
+func (c circle) area() float64 {
+	return math.Pi * c.radius * c.radius
 }
 
-func MakeSound(s Speaker) {
-	s.Speak()
+func (c circle) perim() float64 {
+	return 2 * math.Pi * c.radius
 }
 
-func Interface() {
-	var dog_one = Dog{name: "Tommy", age: 5}
-	MakeSound(dog_one)
+type geometry interface {
+	area() float64
+	perim() float64
+}
 
-	var cat_one = Cat{name: "puku", age: 2}
-	MakeSound(cat_one)
+func measure(g geometry) {
+	fmt.Println(g)
+	fmt.Println(g.area())
+	fmt.Println(g.perim())
+}
+
+func main() {
+	r := rect{width: 3, height: 4}
+	c := circle{radius: 5}
+
+	measure(r)
+	measure(c)
 }
