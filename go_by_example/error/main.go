@@ -1,64 +1,30 @@
-package error
+package main
 
 import (
 	"errors"
 	"fmt"
-	"log"
 )
 
-func registerUser(fullName string, age int) (string, error) {
-	if fullName == "" {
-		return "", errors.New("full_name is null")
+func f(arg int) (int, error) {
+	if arg == 10 {
+		return -1, errors.New("10 will not work")
 	}
-
-	if age <= 0 {
-		return "", errors.New("age can't not smaller than 1")
-	}
-
-	return fullName, nil
+	return arg + 1, nil
 }
 
-func f(num int) (int, error) {
-	if num == 20 {
-		return -1, errors.New("can't work with number")
-	}
+func main() {
 
-	return num + 5, nil
-
-}
-
-var ErrOutOfTea = fmt.Errorf("no more tea available")
-var ErrPower = fmt.Errorf("can't boil water")
-
-func makeTea(arg int) error {
-	if arg == 2 {
-		return ErrOutOfTea
-	} else if arg == 4 {
-		return fmt.Errorf("making tea: %w", ErrPower)
-	}
-
-	return nil
-}
-
-func Error() {
-	if fullName, err := registerUser("Ritesh Khadka", 21); err != nil {
-		log.Fatalf("error registering user: %s", err)
+	if val, err := f(10); err != nil {
+		fmt.Println(err)
 	} else {
-		fmt.Println("Successfully inserted", fullName)
+		fmt.Println("hi", val)
 	}
 
-	if num, err := f(40); err != nil {
-		log.Fatalf("error in f() %s", err)
-	} else {
-		fmt.Println("Successfully getten the value of num", num)
-
-	}
-
-	for i := 0; i <= 5; i++ {
-		if err := makeTea(i); err != nil {
-			log.Fatalf("error registering user: %s", err)
+	for _, item := range []int{5, 7, 9, 10, 12} {
+		if val, err := f(item); err != nil {
+			fmt.Println(err)
 		} else {
-			fmt.Println("Successfully maked tea")
+			fmt.Println("hi from loop", val)
 		}
 	}
 
