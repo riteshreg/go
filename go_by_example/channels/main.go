@@ -1,26 +1,12 @@
-package channels
+package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func run(counts chan int) {
-	for i := 1; i <= 50; i++ {
-		counts <- i // Send value to the channel
-	}
-	close(counts) // Close the channel when done
-}
+func main() {
+	message := make(chan string)
 
-func Channels() {
-	counts := make(chan int)
+	go func() { message <- "ping" }()
 
-	go run(counts) // Run the function in a goroutine
-
-	fmt.Println(counts, "sdf")
-
-	// Receive values from the channel
-	for value := range counts {
-		fmt.Println("Received:", value)
-	}
-
+	msg := <-message
+	fmt.Println(msg)
 }
